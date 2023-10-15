@@ -1,10 +1,20 @@
-function Product() {
+import Link from "next/link";
+
+function Product({ productsDetails = 29 }) {
   return (
-    <div>
-      <h2>product details 1</h2>
-      <h2>product details 2</h2>
-      <h2>product details 3</h2>
-    </div>
+    <>
+      <h2>
+        <Link href="/product/2">product details 2</Link>
+      </h2>
+      <h2>
+        <Link href="/product/2">product details 3</Link>
+      </h2>
+      <h2>
+        <Link href={`/product/${productsDetails}`}>
+          product details {productsDetails}
+        </Link>
+      </h2>
+    </>
   );
 }
 
