@@ -7,7 +7,9 @@ function Product({ productsDetails = 29 }) {
         <Link href="/product/2">product details 2</Link>
       </h2>
       <h2>
-        <Link href="/product/2">product details 3</Link>
+        <Link href="/product/3" replace>
+          product details 3
+        </Link>
       </h2>
       <h2>
         <Link href={`/product/${productsDetails}`}>
